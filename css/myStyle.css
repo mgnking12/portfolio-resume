@@ -33,7 +33,7 @@ body {
 }
 
 .page-footer {
-    height: 100%;
+    min-height: 100%;
 }
 
 #resume-section {
