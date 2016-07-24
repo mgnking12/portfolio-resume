@@ -2891,7 +2891,7 @@ nav,
 blockquote {
     margin: 20px 0;
     padding-left: 1.5rem;
-    border-left: 5px solid #ee6e73;
+    /*border-left: 5px solid #fff;*/
 }
 
 i {
@@ -3019,12 +3019,11 @@ video.responsive-video {
 .parallax-container {
     position: relative;
     overflow: hidden;
-    height: 500px;
 }
 
 .parallax {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     left: 0;
     right: 0;
     bottom: 0;
@@ -3143,7 +3142,7 @@ ul.staggered-list li {
 footer.page-footer {
     margin-top: 20px;
     padding-top: 20px;
-    background-color: #ee6e73;
+    /*background-color: #ee6e73;*/
 }
 
 footer.page-footer .footer-copyright {
