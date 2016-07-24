@@ -23,85 +23,107 @@ body {
     padding: 2% 0;
 }
 
-
+.marg {
+    margin: 10px;
 }
+
 
 /*.topPhoto {
     background-color: rgba(255, 255, 255, 0.9);
     height: 40em;
     overflow-y: scroll;
 }*/
+
 #home-section {
     padding: 10% 0;
     position: relative;
     overflow: hidden;
     background-color: #fff;
 }
+
 .skills-section {
     min-height: 600px;
     margin-bottom: 20px;
+    overflow-y: scroll;
 }
+
 .page-footer {
     min-height: 100%;
-    background: url("me.png") no-repeat 100% 50%;
+    background: url("../me.png") no-repeat 100% 100%;
+    background-size: cover;
 }
+
 #resume-section {
     margin: 0 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .resume {
     background: #fff;
     padding: 30px;
     /*padding-left: 300px;*/
 }
+
 .title {
     text-transform: uppercase;
     font-size: 20px;
 }
 
-/**/
 
 /**/
+
+
+/**/
+
 .clear {
     clear: both;
     line-height: 0px;
     height: 0px;
 }
+
 .category {
     border-top: 1px dotted #d7d7d7;
     margin: 10px 0 20px 0;
 }
+
 .category .category-container {
     display: block;
 }
+
 .category .category-container > div,
 .category .category-container > figure {
     padding: 0px !important;
 }
+
 .category .skill-list {
     float: left;
     text-align: left;
     margin-top: 15px;
 }
+
 .category .skill-list ul,
 .blog .post {
     float: left;
     width: 100%;
 }
+
 .category .category-container > figure {
     padding: 0px !important;
 }
+
 p {
     padding-bottom: 20px;
     line-height: 1.5em;
     margin: 0px;
     word-wrap: break-word;
 }
+
 .category figure {
     height: 170px;
     text-align: center;
     margin: 0px auto;
 }
+
 .category figure > div {
     height: 150px;
     float: left;
@@ -109,6 +131,7 @@ p {
     font-size: 12px;
     position: relative;
 }
+
 .category .skill-list ul li {
     list-style-type: none;
     text-align: right;
@@ -119,44 +142,49 @@ p {
     font-weight: bold;
     font-size: 11px;
 }
+
 .category.right span {
     float: right;
 }
+
 .category figure > div.frontend {
     display: table;
 }
+
 .category figure > div.backend {
     /*width: 25%;*/
-    
     display: table;
 }
+
 .category figure > div.design {
     /*width: 20%;*/
-    
     display: table;
 }
+
 .category figure p {
     position: absolute;
     top: 75px;
     left: 0px;
     /*width: 100%;*/
-    
     text-align: center;
     font-size: 15px;
     color: #000;
     /*font-size: 10px;*/
-    
     z-index: 200;
 }
+
 .category figure > div.frontend .data {
     /*width: 14%;*/
 }
+
 .category figure > div.backend .data {
     /*width: 14%;*/
 }
+
 .category figure > div.design .data {
     /*width: 14%;*/
 }
+
 .category figure .data {
     display: table-cell;
     vertical-align: top;
@@ -166,6 +194,7 @@ p {
     text-align: center;
     width: auto;
 }
+
 .category figure > div .confident {
     height: 98px;
     width: 8px;
@@ -176,19 +205,23 @@ p {
     position: relative;
     background: url("http://anaenders.com/images/about/graph_sprite.png") -25px 0px no-repeat;
 }
+
 .category figure > div .confident:hover,
 .category figure > div .confident.on {
     background-position: -34px 0px;
     font-weight: bold;
 }
+
 .category figure > div .confident.alt {
     height: 115px;
 }
+
 .category figure > div .confident.alt div {
     position: absolute;
     bottom: 0px;
     left: 3px;
 }
+
 .category figure > div .igotthis {
     height: 98px;
     width: 8px;
@@ -199,28 +232,35 @@ p {
     position: relative;
     background: url("http://anaenders.com/images/about/graph_sprite.png") 0px 0px no-repeat;
 }
+
 .category figure > div .igotthis:hover,
 .category figure > div .igotthis.on {
     background-position: -9px 0px;
     font-weight: bold;
 }
+
 .category figure > div .igotthis.alt {
     height: 115px;
 }
+
 .category figure > div .igotthis.alt div {
     position: absolute;
     bottom: 0px;
     left: 3px;
 }
+
 .category figure > div.frontend .data .graph-header {
     background-color: #ffcdd2;
 }
+
 .category figure > div.backend .data .graph-header {
     background-color: #c5cae9;
 }
+
 .category figure > div.design .data .graph-header {
     background-color: #dcedc8;
 }
+
 .category figure p {
     position: absolute;
     top: 75px;
@@ -232,6 +272,7 @@ p {
     font-size: 10px;
     z-index: 200;
 }
+
 .category figure .data .graph-header {
     position: absolute;
     top: 73px;
@@ -239,18 +280,22 @@ p {
     left: 0px;
     right: 0px;
 }
+
 .category figure .data label {
     font-weight: normal;
 }
+
 label {
     display: inline-block;
     margin: 0 5px 5px 5px;
     font-weight: 500;
     font-size: 10px;
 }
+
 .category figure > div .comfortable.alt {
     height: 115px;
 }
+
 .category figure > div .comfortable {
     height: 98px;
     width: 8px;
@@ -261,14 +306,17 @@ label {
     position: relative;
     background: url("http://anaenders.com/images/about/graph_sprite.png") -50px 0px no-repeat;
 }
+
 .category figure > div .comfortable:hover,
 .category figure > div .comfortable.on {
     background-position: -59px 0px;
     font-weight: bold;
 }
+
 .category figure > div .comfortable.alt {
     height: 115px;
 }
+
 .category figure > div .learning {
     height: 98px;
     width: 8px;
@@ -279,20 +327,25 @@ label {
     position: relative;
     background: url("http://anaenders.com/images/about/graph_sprite.png") -75px 0px no-repeat;
 }
+
 .category figure > div .learning:hover,
 .category figure > div .learning.on {
     background-position: -84px 0px;
     font-weight: bold;
 }
+
 .category figure > div .learning.alt {
     height: 115px;
 }
+
 .category figure > div .learning.alt div {
     position: absolute;
     bottom: 0px;
     left: 3px;
 }
 
+
 /**/
+
 
 /**/

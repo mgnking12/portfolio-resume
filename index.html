@@ -303,7 +303,7 @@
                             <h6 class="flow-text">Education</h6>
                             <h6 class="teal-text">University of Texas at Austin<span class="thin"> Full Stack Development Certificate - 2015</span> <br><span class="small thin black-text">Taking evening and weekend classes to expand my knowledge in Javascript, jQuery, Bootstrap, Node.js/Express, React.js, MongoDB, PHP frameworks like Laravel, MySQL, Heroku, Security and Session Storage, and User Authentication.
                             </span></h6>
-                            <h6 class="teal-text">University of Texas at Austin<span class="thin"> Front End Development— 2015</span> <br><span class="small thin black-text">In this class I became proficient in responsive design and started learning the fundamentals of JavaScript. 
+                            <h6 class="teal-text">Austin Coding Academy<span class="thin"> Front End Development— 2015</span> <br><span class="small thin black-text">In this class I became proficient in responsive design and started learning the fundamentals of JavaScript. 
                             </span></h6>
                         </div>
                     </section>
@@ -330,9 +330,9 @@
     </div>
 
 
-    <footer class="page-footer parallax-container">
+    <footer class="page-footer parallax-container responsive-img ">
         <div class="row center">
-            <div class="parallax"><img src="me.png" alt="Unsplashed background img 1" class="meImg"></div>
+            <!--<div class="parallax"><img src="me.png" alt="Unsplashed background img 1" class="meImg responsive-img"></div>-->
 
             <a href="#index-banner"><i class="fa fa-angle-up white-text fa-3x" aria-hidden="true"></i></a></div>
         </a>
@@ -340,15 +340,19 @@
         <div class="container bottom-container">
             <div class="row">
                 <div class="col l8 s12">
-                    <h5 class="white-text">About Me</h5>
-                    <div class="grey-text text-lighten-2"><span class="thin">“Any sufficiently confident technology is indistinguishable from magic"<br> 
-                    ― Arthur C. Clarke</span><br><br>
-                        <p>The first chapter of my coding life began with a good ole fashioned Myspace layout. I loved learning about the magic my computer would carry out to create the awesome colors on my screen. I loved it so much that I would make a
-                            new layout for my personal page every few weeks. I then decided to monetize this skill and charged a dollar for public use of any layouts I had created previously. I was quite the young entrepreneur at the age of 13!</p>
+                    <h5 class="white-text">About Me<br>
+                    </h5>
+                    <div class="grey-text text-lighten-2">
+
+                        <p>
+                            <span class="thin small">“Any sufficiently confident technology is indistinguishable from magic" <br>― Arthur C. Clarke</span><br><br> The first chapter of my coding life began with a good ole fashioned Myspace layout. I loved
+                            learning about the magic my computer would carry out to create the awesome colors on my screen. I loved it so much that I would make a new layout for my personal page every few weeks. I then decided to monetize this skill and
+                            charged a dollar for public use of any layouts I had created previously. I was quite the young entrepreneur at the age of 13!</p>
 
                         <p>Ten years later and I am at it again. At the end of 2014, I decided to dive back into my first love and discovered Javascript. This new found knowledge allowed me to become a Jr. Front End Developer. As I grow professionally, so
                             does my curiosity. Even though I have a better understanding of the magic of coding, I'm not done unraveling it. Currently, I am exploring all of it as a student with the University of Texas Full Stack Coding Bootcamp. This
                             opportunity has allowed me to discover new names and methods to the magic that was so fascinating to me years ago. </p>
+                        <span class="scrollspy" id="abtMe"></span>
                     </div>
 
                 </div>
@@ -357,14 +361,18 @@
                     <p id="contact-success" class="text-success lead"></p>
                     <p id="contact-error" class="text-danger lead"></p>
                     <form class="contact-form" id="contact-form" role="form" onsubmit="return sendMessage(this)">
-                        <input class="form-control marg" name="name" type="text" placeholder="Your name." required>
-                        <input class="form-control marg" name="email" type="email" placeholder="Your email." required>
-                        <textarea class="form-control marg" name="message" placeholder="Your message." rows="5" required></textarea>
+                        <input name="name" type="text" placeholder="Your name." required>
+                        <input name="email" type="email" placeholder="Your email." required>
+                        <textarea name="message" placeholder="Your message." rows="5" required> </textarea>
                         <br />
                         <button class="btn btn-success pull-right" id="send-button" type="submit">Send Message</button>
                     </form>
-                    <span class="scrollspy" id="abtMe"></span>
                 </div>
+
+
+
+
+
             </div>
         </div>
         <div class="footer-copyright hide">
