@@ -314,12 +314,26 @@
             <!--PORTFOLIO-->
 
             <div class="row hide" id="portfolio-section">
-                <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>Contact Us</h4>
-                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien
-                        id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed
-                        ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                <div class="col s12">
+                    <h3><i class="black-text"></i></h3>
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator portImg" src="portfolioImg/reAustin.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">reAUSTIN<i class="material-icons right">more_vert</i></span>
+                            <div class="row">
+                                <div class="card-action col s6"><a href="http://reaustin.herokuapp.com/">Webpage</a></div>
+                                <div class="card-action col s6"> <a href="https://github.com/mgnking12/reATX-main">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">reAUSTIN<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -363,8 +377,7 @@
                     <form class="contact-form" id="contact-form" role="form" onsubmit="return sendMessage(this)">
                         <input name="name" type="text" placeholder="Your name." required>
                         <input name="email" type="email" placeholder="Your email." required>
-                        <textarea name="message" placeholder="Your message." rows="5" required> </textarea>
-                        <br />
+                        <textarea class="materialize-textarea" name="message" placeholder="Your message." required></textarea>
                         <button class="btn btn-success pull-right" id="send-button" type="submit">Send Message</button>
                     </form>
                 </div>
