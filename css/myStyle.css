@@ -41,6 +41,10 @@ body {
     background-color: #fff;
 }
 
+.card {
+    width: 250px;
+}
+
 .skills-section {
     min-height: 600px;
     margin-bottom: 20px;
