@@ -42,7 +42,11 @@ body {
 }
 
 .card {
-    width: 250px;
+    width: 300px;
+}
+
+.portImg {
+    margin-left: 8%;
 }
 
 .skills-section {
