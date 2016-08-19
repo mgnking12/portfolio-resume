@@ -1,0 +1,410 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL: 
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+    text-align: center
+}
+
+.mt {
+    margin-top: 80px;
+}
+
+.mb {
+    margin-bottom: 80px;
+}
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #43A793;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: #ccc;
+    height: 50px;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default {
+    background-color: #ccc;
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: 1px 1px 1px #868587;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 2px solid #000
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+.abt-img {
+    margin-top: -150px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-up {
+    top: -55px;
+}
+
+.big {
+    width: 60%;
+}
+
+#headerwrap {
+    background-color: #fff;
+    padding-top: 250px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #ccc;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 45em;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #43A793;
+}
+
+#headerwrap .fa {
+    color: #43A793;
+}
+
+.abtMe .fa {
+    color: #fff;
+    text-shadow: 2px 2px 5px #162717;
+}
+
+.abtMe {
+    background: url("/photos/me.png") no-repeat 100% 100%;
+    background-size: cover;
+    z-index: -1;
+    min-height: 45em;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+.send {
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #1F580E;
+    border: 1px solid #1F580E;
+    box-shadow: 3px 3px 5px #000;
+}
+
+.fa-angle-up {
+    margin: 15px;
+}
+
+
+/*.card-btn-rt {
+    margin: 0 5px 0 0;
+    width: 48%;
+}
+
+.card-btn-lft {
+    margin: 0 0 0 5px;
+    width: 48%;
+}*/
+
+.margLeft {
+    margin: 20px 0px 20px 0px;
+}
+
+.abtMe h4 {
+    margin: 20px 30px 20px 0px;
+    color: #fff;
+}
+
+.marg {
+    margin: 0 70px;
+}
+
+#headerwrap h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#headerwrap h4 {
+    font-weight: 400;
+}
+
+#social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f2f2f2;
+}
+
+#social i {
+    font-size: 40px;
+    color: #43A793
+}
+
+#social i:hover {
+    color: #000
+}
+
+#footerwrap {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #43A793;
+    color: #fff;
+}
+
+#footerwrap p {
+    margin-left: 10px;
+}
+
+.whiteBG {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    color: #000;
+    text-align: left;
+    height: 450px;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 90px;
+    margin: 0 70px 0 0;
+}
+
+.links {
+    position: absolute;
+    bottom: 30px;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}
+
+.card-text {
+    font-weight: 100px;
+    text-shadow: 0px 0px 0px #ccc;
+}
+
+#portwrap {
+    padding-top: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ccc;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 45em;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #43A793;
+}
+
+#portwrap .fa {
+    color: #43A793;
+    margin-bottom: 20px;
+}
+
+#portwrap h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#portwrap h4 {
+    font-weight: 400;
+}
+
+#aboutwrap {
+    background-color: #EAE9E8;
+    padding-top: 250px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #ccc;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 45em;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #43A793;
+}
+
+input,
+textarea {
+    background-color: rgba(225, 225, 225, 0.8);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+input::-webkit-input-placeholder {
+    color: #0D1A06 !important;
+    padding: 5px;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #0D1A06 !important;
+    padding: 5px;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #0D1A06 !important;
+    padding: 5px;
+}
+
+input:-ms-input-placeholder {
+    color: #0D1A06 !important;
+    padding: 5px;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #0D1A06 !important;
+    padding: 0 5px;
+}
+
+textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #0D1A06 !important;
+    padding: 0 5px;
+}
+
+textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #0D1A06 !important;
+    padding: 0 5px;
+}
+
+textarea:-ms-input-placeholder {
+    color: #0D1A06 !important;
+    padding: 0 5px;
+}
+
+
+/* Gallery */
+
+.gallery {
+    margin-top: 30px;
+}
+
+.gallery img:hover {
+    opacity: 0.4;
+}

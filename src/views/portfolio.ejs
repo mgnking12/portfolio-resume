@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--bower:css-->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+    <!--endbower-->
+    <!--bower:js-->
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!--endbower-->
+    <!--inject:css-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--endInject-->
+    <!--inject:js-->
+    <script src="/js/app.js"></script>
+    <!--endInject-->
+
+</head>
+
+
+
+<body>
+
+    <!-- Static navbar -->
+
+
+
+
+    <div id="portwrap">
+        <div class="bodycontainer container">
+
+            <div id="portfolio-section">
+                <div class="portfolio row">
+                    <div class="text-left col-xs-6">
+                        <a href="#abtMe"><i class="fa fa-angle-down teal-text fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="#">
+                        <div class="text-right col-xs-6"> <a href="/"><i id="back-home-p" class="teal-text fa fa-angle-right fa-3x" aria-hidden="true"></i></a></div>
+                    </a>
+                </div>
+                <div class="row">
+                    <% for (var i=0; i < ports.length; i++){%>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h4 class="card-title"><%=ports[i].title%></h4>
+                                    <h6 class="card-subtitle text-muted"><%=ports[i].subtitle%></h6>
+                                    <hr>
+                                </div>
+                                <img src="<%=ports[i].photo%>" alt="Card image" class="img-responsive">
+                                <div class="card-block">
+                                    <p class="card-text">
+                                        <%-ports[i].description%>
+                                    </p>
+                                    <div class="links col-xs-9">
+                                        <a href=" <%=ports[i].link1[0]%>" class="card-link btn btn-default col-xs-6">
+                                            <%=ports[i].link1[1]%>
+                                        </a>
+                                        <a href=" <%=ports[i].link2[0]%>" class="card-link btn btn-default col-xs-6">
+                                            <%=ports[i].link2[1]%>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <%}%>
+                </div>
+            </div>
+        </div>
+        <! --/row -->
+    </div>
+    <!-- /container -->
+    </div>
+    <! --/headerwrap -->
+
+    <section id="abtMe"></section>
+    <div class="container abtMe">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row mt mb marg">
+                <div class="text-center">
+                    <a href="#portwrap"><i class="fa fa-angle-up white-text fa-3x" aria-hidden="true"></i></a></div>
+                </a>
+            </div>
+            <div class="col-md-10 col-sm-12 margLeft">
+
+                <h4 class="white-text">About Me<br>
+                    </h4>
+                <div class="grey-text text-lighten-2">
+
+                    <p>
+                        <span class="thin small">“Any sufficiently confident technology is indistinguishable from magic" <br>― Arthur C. Clarke</span><br><br> The first chapter of my coding life began with a good ole fashioned Myspace layout. I loved
+                        learning about the magic my computer would carry out to create the awesome colors on my screen. I loved it so much that I would make a new layout for my personal page every few weeks. I then decided to monetize this skill and charged
+                        a dollar for public use of any layouts I had created previously. I was quite the young entrepreneur at the age of 13!</p>
+
+                    <p>Ten years later and I am at it again. At the end of 2014, I decided to dive back into my first love and discovered Javascript. This new found knowledge allowed me to become a Jr. Front End Developer. As I grow professionally, so does
+                        my curiosity. Even though I have a better understanding of the magic of coding, I'm not done unraveling it. Currently, I am exploring all of it as a student with the University of Texas Full Stack Coding Bootcamp. This opportunity
+                        has allowed me to discover new names and methods to the magic that was so fascinating to me years ago. </p>
+                    <span class="scrollspy" id="abtMe"></span>
+                </div>
+
+            </div>
+            <div class="contact contactPage col-md-2  white-text">
+                <h4 class="contact-title">Let's Chat</h4>
+                <p id="contact-success" class="text-success lead"></p>
+                <p id="contact-error" class="text-danger lead"></p>
+                <form class="contact-form" id="contact-form" role="form" onsubmit="return sendMessage(this)">
+                    <input name="name" type="text" placeholder="Your name." required>
+                    <input name="email" type="email" placeholder="Your email." required>
+                    <textarea class="materialize-textarea" name="message" placeholder="Your message." required></textarea>
+                    <button class="btn btn-success send" id="send-button" type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+        <! --/row -->
+    </div>
+    </div>
+    <! --/container -->
+
+</body>
+
+</html>
