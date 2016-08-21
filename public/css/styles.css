@@ -153,8 +153,11 @@ header {
     color: #43A793;
 }
 
-#headerwrap .fa {
+#headerwrap .fa,
+#resumewrap .fa,
+#portwrap .fa {
     color: #43A793;
+    margin-bottom: 20px;
 }
 
 .abtMe .fa {
@@ -310,11 +313,6 @@ hr {
     color: #43A793;
 }
 
-#portwrap .fa {
-    color: #43A793;
-    margin-bottom: 20px;
-}
-
 #portwrap h1 {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -327,11 +325,9 @@ hr {
     font-weight: 400;
 }
 
-#aboutwrap {
-    background-color: #EAE9E8;
-    padding-top: 250px;
-    text-align: center;
-    text-shadow: 2px 2px 5px #ccc;
+#resumewrap {
+    padding-top: 50px;
+    text-shadow: 1px 1px 2px #ccc;
     background-attachment: relative;
     background-position: center center;
     min-height: 45em;
@@ -344,7 +340,21 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #43A793;
+}
+
+.resume {
+    margin: 20px 30px;
+}
+
+.bulletPoints {
+    font-size: 12px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.reg {
+    font-size: 12px;
+    margin-top: -20px;
 }
 
 input,

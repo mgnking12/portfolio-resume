@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--bower:css-->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+    <!--endbower-->
+    <!--bower:js-->
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!--endbower-->
+    <!--inject:css-->
+    <link rel="stylesheet" href="/css/bootstrap-image-gallery.css">
+    <link rel="stylesheet" href="/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--endInject-->
+    <!--inject:js-->
+    <script src="/js/app.js"></script>
+    <script src="/js/bootstrap-image-gallery.js"></script>
+    <script src="/js/bootstrap-image-gallery.min.js"></script>
+    <script src="/js/skills.js"></script>
+    <!--endInject-->
+
+</head>
+
+
+
+<body>
+
+    <!-- Static navbar -->
+
+    <div id="resumewrap">
+        <div class="bodycontainer container">
+            <div class="row" id="resume-section">
+                <div class="row">
+                    <div class="text-left col-xs-6">
+                        <a href="/"><i class="fa fa-angle-left teal-text fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="#abtMe">
+                        <div class="text-right col-xs-6"> <i id="back-home-p" class="teal-text fa fa-angle-down fa-3x" aria-hidden="true"></i></div>
+                    </a>
+                </div>
+                <section class="resume">
+                    <h6 class="title">Resume</h6>
+                    <div class="summary">
+                        <h3>Developer</h3>
+                    </div>
+
+
+
+                    <section class="section row">
+                        <div class="category col-md-12">
+                            <h6 class="flow-text">SKILLS</h6>
+                            <div class="clear"></div>
+
+                            <div id="bars" class="row">
+                                <% for (var i=0; i < skills.length; i++){%>
+                                    <div class="bar col-md-1 col-xs-4" data-percent="<%-skills[i].precent%>">
+                                        <h3><%-skills[i].skill%></h3>
+                                        <canvas class="bar-circle" width="70" height="70" style="background-image:url(<%=skills[i].logo%>)"></canvas>
+                                    </div>
+                                    <%}%>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-md-12">
+                            <h3>EXPERIENCE</h3>
+                            <!--<h4>Freelance <span class="thin">Remote — July 2015 - Present</span></h4><br>
+                            <ul>
+                                <li class="bulletPoints">
+                                    <h5>Lone Star Pediatric Dental</h5>
+                                    <p>- Created marketing ads for blogs and newspapers by using Photoshop, Illustrator, and InDesign</p>
+                                </li>
+                                 <li class="bulletPoints">
+                                    <h5>BASICALLYOURS</h5>
+                                    <p>- Orchestrating the front-end design and development for their ecommerce website using React.js</blockquote>
+                                </li>
+                                <li class="bulletPoints">
+                                    <h5>reAUSTIN</h5>
+                                    <p>- Handling the front-end development using jQuery and the design portions using Illustrator and Photoshop</blockquote>
+                                </li>
+                            </ul>-->
+                        </div>
+                    </section>
+                    <% for (var i=0; i < experience.length; i++){%>
+                        <section class="row">
+                            <div class="col-md-12">
+                                <h4 class="teal-text"><%-experience[i].title%><span class="thin"> <%-experience[i].dates%></span><br>
+                            <span class="small thin black-text"><%-experience[i].description%>
+                            </span></h4>
+                                <ul>
+                                    <h6>Day to Day Roles</h6>
+                                    <% for (var j=0; j < experience[i].day2day.length; j++){%>
+                                        <li class="bulletPoints">
+                                            <p>
+                                                <%-experience[i].day2day[j]%>
+                                            </p>
+                                        </li>
+                                        <%}%>
+                                </ul>
+                                <ul>
+                                    <h6>Acheivements</h6>
+                                    <% for (var j=0; j < experience[i].achievements.length; j++){%>
+                                        <li class="bulletPoints">
+
+                                            <p>
+                                                <%-experience[i].achievements[j]%>
+                                            </p>
+                                        </li>
+
+                                        <%}%>
+                                </ul>
+                            </div>
+                        </section>
+                        <%}%>
+                            <section class="row">
+                                <div class="col-md-12">
+                                    <h3>Education</h3>
+                                    <h4 class="teal-text">University of Texas at Austin<span class="thin"> Full Stack Development Certificate - 2016</span> </h4><br>
+                                    <p class="reg">Taking evening and weekend classes to expand my knowledge in Javascript, jQuery, Bootstrap, Node.js/Express, React.js, MongoDB, PHP frameworks like Laravel, MySQL, Heroku, Security and Session Storage, and User Authentication.
+                                    </p>
+                                    <h4 class="teal-text">Austin Coding Academy<span class="thin"> Front End Development— 2015</span> </h4><br>
+                                    <p class="reg">In this class I became proficient in responsive design and started learning the fundamentals of JavaScript.
+                                    </p>
+                                </div>
+                            </section>
+                </section>
+            </div>
+
+            <! --/row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <! --/headerwrap -->
+
+    <section id="abtMe"></section>
+    <div class="container abtMe">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row mt mb marg">
+                <div class="text-center">
+                    <a href="#headerwrap"><i class="fa fa-angle-up white-text fa-3x" aria-hidden="true"></i></a></div>
+            </div>
+            <div class="col-md-10 col-sm-12 margLeft">
+
+                <h4 class="white-text">About Me<br>
+                    </h4>
+                <div class="grey-text text-lighten-2">
+
+                    <p>
+                        <span class="thin small">“Any sufficiently confident technology is indistinguishable from magic" <br>― Arthur C. Clarke</span><br><br> The first chapter of my coding life began with a good ole fashioned Myspace layout. I loved
+                        learning about the magic my computer would carry out to create the awesome colors on my screen. I loved it so much that I would make a new layout for my personal page every few weeks. I then decided to monetize this skill and charged
+                        a dollar for public use of any layouts I had created previously. I was quite the young entrepreneur at the age of 13!</p>
+
+                    <p>Ten years later and I am at it again. At the end of 2014, I decided to dive back into my first love and discovered Javascript. This new found knowledge allowed me to become a Jr. Front End Developer. As I grow professionally, so does
+                        my curiosity. Even though I have a better understanding of the magic of coding, I'm not done unraveling it. Currently, I am exploring all of it as a student with the University of Texas Full Stack Coding Bootcamp. This opportunity
+                        has allowed me to discover new names and methods to the magic that was so fascinating to me years ago. </p>
+                    <span class="scrollspy" id="abtMe"></span>
+                </div>
+
+            </div>
+            <div class="contact contactPage col-md-2  white-text">
+                <h4 class="contact-title">Let's Chat</h4>
+                <p id="contact-success" class="text-success lead"></p>
+                <p id="contact-error" class="text-danger lead"></p>
+                <form class="contact-form" id="contact-form" role="form" onsubmit="return sendMessage(this)">
+
+                    <input name="name" type="text" placeholder="Your name." required>
+
+                    <input name="email" type="email" placeholder="Your email." required>
+
+                    <textarea class="materialize-textarea" name="message" placeholder="Your message." required></textarea>
+                    <button class="btn btn-success send" id="send-button" type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+        <! --/row -->
+    </div>
+    </div>
+    <! --/container -->
+
+
+</body>
+
+</html>
